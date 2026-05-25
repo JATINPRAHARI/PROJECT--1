@@ -1,0 +1,79 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-bg-base: #0a0a0b;
+  --color-bg-surface: #121214;
+  --color-bg-subtle: #1d1d21;
+  --color-border-main: #27272a;
+  --color-brand-primary: #00f5ff;
+  --color-brand-secondary: #7c3aed;
+  --color-text-dim: #71717a;
+  --color-status-success: #22c55e;
+  --color-status-warning: #f59e0b;
+  --color-status-error: #ef4444;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --radius: 0.5rem;
+  --background: #0a0a0b;
+  --foreground: #fafafa;
+  --card: #121214;
+  --card-foreground: #fafafa;
+  --popover: #121214;
+  --popover-foreground: #fafafa;
+  --primary: #00f5ff;
+  --primary-foreground: #0a0a0b;
+  --secondary: #1d1d21;
+  --secondary-foreground: #fafafa;
+  --muted: #1d1d21;
+  --muted-foreground: #71717a;
+  --accent: #1d1d21;
+  --accent-foreground: #fafafa;
+  --destructive: #ef4444;
+  --destructive-foreground: #fafafa;
+  --border: #27272a;
+  --input: #27272a;
+  --ring: #00f5ff;
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html, body, #root { height: 100%; }
+  body {
+    background: var(--color-bg-base);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
