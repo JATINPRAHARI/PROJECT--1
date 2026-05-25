@@ -1,0 +1,27 @@
+{
+  "real_prompts": [
+    "Build a small CRM for managing leads and follow-ups. Roles: admin, manager, agent.",
+    "Create an internal tool for tracking customer support tickets with priority and status.",
+    "Make a task tracker with projects, tasks, and assignees. Include basic roles.",
+    "Build an invoice manager for a small agency with clients and invoices.",
+    "Create a lightweight content workflow tool for articles and reviews.",
+    "Build a simple ecommerce backoffice for products and orders (admin only).",
+    "Create a subscription SaaS admin panel for users and plans.",
+    "Make a bug tracker for a dev team with tickets and comments.",
+    "Build a recruiting tracker for candidates and interviews.",
+    "Create a field service job tracker with jobs and technicians."
+  ],
+  "edge_cases": [
+    "Make something cool.",
+    "I want a CRM but also no database and also it must be persistent.",
+    "Build an app with roles but don't ask me any questions.",
+    "Create a tool for everything: CRM, ecommerce, CMS, and analytics.",
+    "Make an app with 0 roles.",
+    "Use quantum encryption and blockchain for tasks.",
+    "Build a system with invoices but forbid any money fields.",
+    "Make it run on my phone but also only on Windows.",
+    "I need perfect determinism but also creative variation every run.",
+    "Build an app, but don't generate any schemas."
+  ]
+}
+

@@ -1,0 +1,4 @@
+project_id = "ibsbitnkcjlpkrutdkwr"
+
+[functions.compile]
+verify_jwt = false
