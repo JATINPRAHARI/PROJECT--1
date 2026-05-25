@@ -80,16 +80,16 @@
     "#tanstack-start-entry": "./src/start.ts"
   },
   "scripts": {
-    "build": "node scripts/run-vite.mjs build",
-    "build:dev": "node scripts/run-vite.mjs build --mode development",
-    "dev": "node scripts/run-vite.mjs dev",
+    "build": "vite build",
+    "build:dev": "vite build --mode development",
+    "dev": "vite dev",
     "sw:compile": "node scripts/sw-compile.mjs",
     "sw:patch": "node scripts/sw-patch.mjs",
     "sw:run": "node scripts/sw-run.mjs",
     "sw:eval": "node scripts/sw-eval.mjs",
     "format": "prettier --write .",
     "lint": "eslint .",
-    "preview": "node scripts/run-vite.mjs preview"
+    "preview": "vite preview"
   },
   "sideEffects": false,
   "type": "module"
